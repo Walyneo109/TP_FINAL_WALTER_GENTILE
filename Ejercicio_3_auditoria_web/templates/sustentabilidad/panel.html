@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>PANEL</title>
+</head>
+<body>
+    <p class= "title" >Eco Solutions Panel</p>
+    <br>
+
+<p class="sub">El total de emisiones es: <b class="subcolor"> {{ total_emisiones }}   kg CO2 </b></p>
+       <p class="sub"> La planta con mayor consumo es: <b class="subcolor"> Planta {{ planta_mayor_consumo }}</b>  </p>
+</html>
