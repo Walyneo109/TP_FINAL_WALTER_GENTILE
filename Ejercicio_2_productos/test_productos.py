@@ -1,7 +1,7 @@
 import pytest
 import os
 import json
-from Ejercicio_2.Productos import PanelSolar, StockInvalidError, GestorInventario
+from Ejercicio_2_productos.Productos import PanelSolar, StockInvalidError, GestorInventario
 
 def test_precio_crudo_lanza_value_error():
     # El precio como string ("125000.00") debe romper el f-string :.2f
