@@ -1,0 +1,20 @@
+[
+    {
+        "id_product": "P-103",
+        "name": "Celda Solar Flex",
+        "price": "$45000.50",
+        "stock": 8,
+        "type": "Panel Solar",
+        "eficiencia": "19.0%",
+        "poten_w": 200
+    },
+    {
+        "id_product": "P-104",
+        "name": "Celda Solar ",
+        "price": "$35000.50",
+        "stock": 2,
+        "type": "Panel Solar",
+        "eficiencia": "17.0%",
+        "poten_w": 220
+    }
+]

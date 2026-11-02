@@ -26,7 +26,9 @@ def obtener_metricas_consumo (registros):
         )
     for reg in registros:
         total_emisiones += (calcular_emisiones_carbono(reg["consumo_kwh"])
+                            
         )
+        
     return { 
         "total_emisiones":
         round(total_emisiones, 2), 

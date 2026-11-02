@@ -55,7 +55,7 @@ class GestorInventario:
 
 ##Prueba con datos##
 if __name__ == "__main__":
-    print("--- Pruebas de catálogo EcoTech (Datos Crudos) ---")
+    print("--- Pruebas de catálogo ---")
     
     catalog = [
         {
@@ -118,7 +118,7 @@ if __name__ == "__main__":
     print("\n--")
   
     os.makedirs("Ejercicio_2", exist_ok=True)
-    ruta_salida = "Ejercicio_2/catalogo_ecotech.json"
+    ruta_salida = "Ejercicio_2_productos/catalogo_ecotech.json"
     
     try:
         GestorInventario.guardar_catalogo_json(lista_productos_validos, ruta_salida)

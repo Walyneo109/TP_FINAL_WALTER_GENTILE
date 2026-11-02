@@ -5,8 +5,11 @@ head{
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffddc7;
+    margin: 0;
+    padding: 0;
+    
 }
-
 
 .title {
     font-size: 44px;
@@ -16,9 +19,49 @@ body {
     text-align: center;
     background-color:antiquewhite
 }
-.sub {
-    font-size: 28px;
-    margin: 10px;
+.container{
     padding: 20px;
-    text-align: left;
+    background-color: #fbe8d7;
+    border: 2px solid #c7c6c6;
+}
+.container1 {
+    display:flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around; 
+    font-size: 35px;
+    align-items: center;
+    border: 2px solid #c7c6c6;
+}
+
+.container1 .sub {
+    margin: 10px; 
+    padding: 10px; 
+}
+.container2 {
+    padding: 20px;
+    background-color:rgb(254, 218, 182);
+    text-align: center;
+    border: 2px solid #c7c6c6;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+     font-size: 25px; 
+     border: 2px solid #c7c6c6;
+}
+table th {
+    font-size: 24px; 
+    padding: 18px 15px; 
+    border-bottom: 3px solid #636262; 
+    text-align: center;
+}
+
+/* Estilos para las filas de datos */
+table td {
+    padding: 16px 15px; 
+    border-bottom: 1px solid #ccc; 
+    text-align: center;
 }

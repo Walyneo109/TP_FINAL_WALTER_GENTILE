@@ -5,12 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>PANEL</title>
+    <title>Panel EcoSolutions</title>
 </head>
 <body>
-    <p class= "title" >Eco Solutions Panel</p>
+    <p class= "title" >EcoTech Solutions Panel</p>
     <br>
+    <div class="container">
+      <h2 style="text-align: center; font-size: 30px; font-weight: bold;"> INFORMACIÓN DE CONSUMO Y EMISIONES</h2>
+ <div class="container1">
+  
+    <div class="sub">El total de emisiones es: <b class="subcolor">{{ total_emisiones }} kg CO2</b></div>
+    <div class="sub">La planta con mayor consumo es: <b class="subcolor">Planta {{ planta_mayor_consumo }}</b></div>
+ </div>
+    </div>
+</div>
+</div>
 
-<p class="sub">El total de emisiones es: <b class="subcolor"> {{ total_emisiones }}   kg CO2 </b></p>
-       <p class="sub"> La planta con mayor consumo es: <b class="subcolor"> Planta {{ planta_mayor_consumo }}</b>  </p>
+<div class="container2">
+        <h2> HISTORIAL DE CONSUMO POR PLANTA INDUSTRIAL</h2>
+        <table class="">
+            <thead>
+                <tr>
+                    <th>Planta Industrial</th>
+                    <th>Consumo (kWh)</th>
+                    <th>Emisiones Generadas (kgCO)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for reg in registros %}
+                <tr>
+                    <td>{{ reg.planta }}</td>
+                    <td>{{ reg.consumo_kwh }} kWh</td>
+                    <td>{% widthratio reg.consumo_kwh 10 4 %} kgCO₂</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </html>
